@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikrant Gawali - World-Class Educator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Roboto', Arial, sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #e3f2fd, #f3e5f5); color: #333; line-height: 1.6; }
+        header { background: linear-gradient(90deg, #00b4d8, #007bff); color: white; padding: 30px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        nav { background: #333; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+        nav a:hover { color: #ff6b35; }
+        section { padding: 40px; margin: 20px auto; max-width: 1200px; background: white; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); margin-bottom: 30px; transition: transform 0.3s; }
+        section:hover { transform: translateY(-5px); }
+        h2 { color: #00b4d8; text-align: center; margin-bottom: 20px; font-size: 2em; }
+        ul { list-style: none; padding: 0; }
+        ul li { margin: 10px 0; padding-left: 20px; position: relative; }
+        ul li:before { content: '🎓'; position: absolute; left: 0; color: #ff6b35; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        table th, table td { padding: 12px; text-align: left; border: 1px solid #ddd; }
+        table th { background: #00b4d8; color: white; }
+        footer { background: linear-gradient(90deg, #333, #555); color: white; text-align: center; padding: 20px; }
+        .hero { background: linear-gradient(135deg, rgba(0,180,216,0.8), rgba(255,107,53,0.8)), url('vikrant-photo.jpg'); background-size: cover, cover; background-position: center; height: 400px; display: flex; align-items: center; justify-content: center; color: white; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); border-radius: 15px; margin: 20px; }
+        .hero h1 { font-size: 3em; animation: fadeIn 2s; }
+        .hero p { font-size: 1.2em; animation: fadeIn 2s 0.5s both; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .icon { color: #ff6b35; margin-right: 10px; }
+        .testimonial { background: #e8f5e8; padding: 20px; border-left: 5px solid #00b4d8; margin: 20px 0; font-style: italic; }
+        .btn { display: inline-block; background: #ff6b35; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; transition: background 0.3s; }
+        .btn:hover { background: #e55a2b; }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s, transform 0.6s';
+                observer.observe(section);
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-graduation-cap icon"></i>Vikrant Vasantrao Gawali</h1>
+        <p><i class="fas fa-envelope icon"></i>Email: vikrantzone@gmail.com | <i class="fas fa-phone icon"></i>Phone: 9405986466</p>
+    </header>
+    <nav>
+        <a href="#summary"><i class="fas fa-user"></i>Summary</a>
+        <a href="#achievements"><i class="fas fa-trophy"></i>Achievements</a>
+        <a href="#responsibilities"><i class="fas fa-tasks"></i>Responsibilities</a>
+        <a href="#experience"><i class="fas fa-briefcase"></i>Experience</a>
+        <a href="#qualifications"><i class="fas fa-certificate"></i>Qualifications</a>
+        <a href="#personal"><i class="fas fa-heart"></i>Personal</a>
+    </nav>
+    <section id="hero" class="hero">
+        <div>
+            <h1>Inspiring Minds, Shaping Futures</h1>
+            <p>12+ Years of Excellence in Education & Innovation</p>
+            <a href="#summary" class="btn">Explore My Journey</a>
+        </div>
+    </section>
+    <section id="summary">
+        <h2><i class="fas fa-lightbulb icon"></i>Professional Summary</h2>
+        <p>Dynamic and results-driven Academic Leader with 12+ years of experience in school administration, strategic planning, and academic leadership. Skilled in managing institutional operations, CBSE compliance, teacher mentoring, and student discipline. Recognized for driving digital transformation and academic excellence while ensuring holistic student development.</p>
+        <div class="testimonial">"Vikrant's innovative teaching methods have transformed our classroom into a hub of creativity and learning." - A Colleague</div>
+    </section>
+    <section id="achievements">
+        <h2><i class="fas fa-award icon"></i>Professional Achievements</h2>
+        <ul>
+            <li>Certified CBSE Resource Person.</li>
+            <li>Centre Observer for AISSE/AISSCE Theory Exams (2023 & 2025) appointed by CBSE.</li>
+            <li>Co-Evaluator and Evaluator for AISSE/AISSCE Theory Board Exams.</li>
+            <li>External Examiner for conducting AISSCE Practical Exams across various CBSE schools.</li>
+            <li>Observer for PARAKH Rashtriya Sarvekshan 2024.</li>
+            <li>Observer for National Achievement Survey (NAS) 2021.</li>
+            <li>Invigilator for NEET Examination (2024 & 2025).</li>
+            <li>Academic Coordinator, Head of Department and Subject Coordinator.</li>
+            <li>Head of Computer Science Department (Interim) at Degree College, overseeing 12 University Practical Exams in one single session.</li>
+        </ul>
+    </section>
+    <section id="responsibilities">
+        <h2><i class="fas fa-cogs icon"></i>Key Administrative Responsibilities</h2>
+        <ul>
+            <li>Led Teacher Training Sessions on In-House Trainings, Pedagogy, ICT.</li>
+            <li>Prepared the School Annual Calendar, aligning academics, examinations, and co-curricular activities.</li>
+            <li>Oversaw school Timetable creation and Management, balancing Academic and Co-curricular priorities.</li>
+            <li>Managed Proxy arrangement & daily Teacher substitution to ensure smooth Academic flow.</li>
+            <li>Led Alumni Connect initiative, strengthening Alumni-School relationships.</li>
+            <li>Head, Grievance Redressal Committee, ensuring fair resolution of student concerns.</li>
+            <li>Head, Discipline Committee, implementing effective behavior management systems.</li>
+            <li>Member of School Core Committee, Admission Committee, and Outdoor Visit Committee.</li>
+            <li>Served as Electoral Committee In-charge, ensuring transparent and smooth conduct of student elections.</li>
+            <li>Organized and managed Parent-Teacher Meetings (PTMs), including planning, communication, and execution.</li>
+            <li>Active member of Social Media & Digital Promotion Committee, enhancing school’s branding and visibility.</li>
+            <li>Handled event logistics: guest seating, student seating, program flow, and minimizing academic loss during events.</li>
+            <li>Supervised floor cleanliness and discipline monitoring, promoting a healthy school environment.</li>
+            <li>Designed and shared teacher birthday greetings to build staff morale and team culture.</li>
+        </ul>
+        <p><strong>Titles:</strong> CBSE Resource Person | Innovation Ambassador (MoE) | MIEE | Academic Coordinator | HOD | PGT CS | Informatics Practices | Artificial Intelligence | Python</p>
+    </section>
+    <section id="trainings">
+        <h2><i class="fas fa-book icon"></i>Trainings & Certificates</h2>
+        <ul>
+            <li>Certified TOT ISTM CBSE Master Trainer (2024).</li>
+            <li>Microsoft Innovative Educator Expert (MIEE) – Recognized for Four consecutive years (2022 – 2025) among Top Educators Globally.</li>
+            <li>Innovation Ambassador – Certified by the Ministry of Education (MoE), Innovation Cell.</li>
+            <li>ISEA Cyber Volunteer – Information Security Education & Awareness (), Government of India.</li>
+            <li>Participated in the Awareness Programme on Promoting Skill Education in Schools organized by CBSE & NSSC (2023).</li>
+            <li>Ranked 5th on NASSCOM Future Skills Prime Platform among over 35,000 CBSE teachers worldwide, completing 250+ hours of training.</li>
+            <li>Recipient of CSAW Award 2022 on GLOBAL CS AMBASSADOR in Effective Use of Technology in Education among 9000 nominated entries around the world.</li>
+            <li>CISCO Cyber Security Certification (Beginner and Intermediate levels).</li>
+            <li>Attended Two-Day Master Trainer Workshop at St. Vincent Pallotti School Nagpur.</li>
+            <li>Attended Two-Day Bootcamp on Innovation at Raisoni College of Engineering Nagpur.</li>
+            <li>Participated in the Awareness Programme on Promoting Skill Education in Schools organized by CBSE & Nagpur Sahodaya Schools Complex (2023).</li>
+            <li>Member of Global Computer Science Teachers Association (CSTA).</li>
+        </ul>
+    </section>
+    <section id="participation">
+        <h2><i class="fas fa-users icon"></i>Participation & Achievements</h2>
+        <ul>
+            <li>Attended Inter-Collegiate workshop on “Creative Intelligency: A key of Success” held at S.S. Girl`s College Gondia.</li>
+            <li>Attended workshop on “Capacity Building Program on CCE” held at USA Vidya Niketan, Tumsar.</li>
+            <li>Competed in University-Level Debates, Quizzes, and State-Level Coding Competitions.</li>
+            <li>Earned NCC 'A' Certificate and participated in NCC speech competitions.</li>
+        </ul>
+    </section>
+    <section id="experience">
+        <h2><i class="fas fa-chart-line icon"></i>Professional Experience</h2>
+        <table>
+            <tr><th>S.N</th><th>Institute Name</th><th>Designation</th><th>Experience</th><th>Subject Taught</th><th>Responsibilities</th></tr>
+            <tr><td>1</td><td>Gondia Public School Gondia</td><td>PGT</td><td>April 2024 - Present</td><td>CS (083), IT (402)</td><td>Academic Coordinator, HOD, Subject Coordinator</td></tr>
+            <tr><td>2</td><td>Meritorious Public School Tirora</td><td>PGT</td><td>June 2023 – April 2024</td><td>IP (065), AI (417)</td><td>HOD, Subject Coordinator</td></tr>
+            <tr><td>3</td><td>USA Vidya Niketan Tumsar</td><td>PGT</td><td>April 2018 – May 2023</td><td>CS (083), IP (065)</td><td>HOD</td></tr>
+            <tr><td>4</td><td>USA Vidya Niketan Tumsar</td><td>TGT</td><td>June 2014 – March 2018</td><td>FIT(165), Physics</td><td>Subject Coordinator</td></tr>
+            <tr><td>5</td><td>C J Patel College Tirora CHB</td><td>Lecturer</td><td>June 2011 - May 2012</td><td>AI, OS, Unix, Linux, CN, Digital Electronics</td><td>Lecturer</td></tr>
+        </table>
+    </section>
+    <section id="qualifications">
+        <h2><i class="fas fa-graduation-cap icon"></i>Academic Qualification</h2>
+        <ul>
+            <li>PGDSLM (School Leadership & Management) – (Pursuing)</li>
+            <li>MCA from Department of Computer Science, NMU Jalgaon with B+ grade.</li>
+            <li>B.Sc (Electronics) from D B Science College Gondia of RTM Nagpur University.</li>
+            <li>B.Ed from Anurag Adhyapak Vidyalay, Bhandara of RTM Nagpur University.</li>
+            <li>HSC from D B Science College Gondia of Nagpur Board.</li>
+            <li>SSC from M MPL H S School Gondia of Nagpur Board.</li>
+        </ul>
+    </section>
+    <section id="personal">
+        <h2><i class="fas fa-smile icon"></i>Personal Profile</h2>
+        <ul>
+            <li><strong>Name:</strong> Vikrant Vasantrao Gawali</li>
+            <li><strong>Gender:</strong> Male</li>
+            <li><strong>Date of Birth:</strong> 31/07/1982</li>
+            <li><strong>Marital Status:</strong> Married</li>
+            <li><strong>Nationality:</strong> Indian</li>
+            <li><strong>Hobbies:</strong> Listening Music, Traveling, Cooking</li>
+            <li><strong>Linguistic Proficiency:</strong> English, Hindi, Marathi</li>
+            <li><strong>Permanent Address:</strong> Suryatola Ward, behind Shakti Mandir, Parmatma Ek Nagar Gondia – 441614</li>
+        </ul>
+        <p><strong>Declaration:</strong> I hereby declare that the above information is true to the best of my knowledge and belief. Place: Gondia. Date: (Vikrant V. Gawali)</p>
+        <p><a href="your-portfolio-link" class="btn">Scan QR code to view full portfolio with images and certifications</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2023 Vikrant Gawali. All rights reserved. <i class="fas fa-globe"></i> Inspiring Education Worldwide</p>
+    </footer>
+</body>
+</html>
